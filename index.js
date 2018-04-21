@@ -24,11 +24,7 @@ var msg = message.content.toUpperCase();
   var sender = message.author;
 
 	
-	if(message.content.includes("http")){
-	if(message.member.hasPermission("MANAGE_MESSAGES")) return;
-  	message.delete()
-  	message.channel.send(`${message.author} Links are not allowed autist.`)
-  }
+
 	
 	
   if (sender.id === "429357437641031680"){
@@ -51,19 +47,8 @@ var msg = message.content.toUpperCase();
 	
   if(cmd === `${prefix}help`){
 
-    let helpEmbed1 = new Discord.RichEmbed()
-    .setTitle("Autistic Help Page For Mods/Admins")
-    .setColor(botconfig.pembe)
-    .addField("KILL THIS SHITS", "&ban <@nick> <reason>: Bans member.\n&kick <@nick> <reason>: Kicks member.\n&del: Deletes all messages from channel.")
 
-    let helpEmbed2 = new Discord.RichEmbed()
-    .setTitle("Autistic Help Page For Members")
-    .setColor(botconfig.pembe)
-    .addField("Commands", "&report <@nick> <reason>: Reports player.\n&bot: About bot.\n&server: About server.")
-
-
-    message.channel.send(helpEmbed1);
-    message.channel.send(helpEmbed2);
+    message.channel.send("Just testing this bot. 'Command are not working'");
     return;
   }
 	
