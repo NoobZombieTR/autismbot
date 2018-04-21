@@ -134,4 +134,4 @@ var msg = message.content.toUpperCase();
 
 });
 
-bot.login("NDM3MjI2OTU5Mzc5MTAzNzU1.DbzGmQ.aZQFm3oTWShRv5lu9YPC7PAHsf8");
+bot.login(process.env.BOT_TOKEN);
