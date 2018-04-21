@@ -7,7 +7,7 @@ const bot = new Discord.Client({disableEveryone: true});
 bot.on("ready", async () => {
 	
   console.log(`${bot.user.username} adlı bot ${bot.guilds.size} sunucusunda online!`);
-  bot.user.setActivity(`at help - ${bot.guilds.size} autistic servers.`, {url: "https://www.twitch.tv/directory/game/Minecraft"});
+  bot.user.setActivity(`athelp - ${bot.guilds.size} autistic servers.`, {url: "https://www.twitch.tv/directory/game/Minecraft"});
 	
 
 });
